@@ -3,6 +3,7 @@ import { Nabar } from './Components/Nabar'
 import { Home } from './pages/Home'
 import { Contacto } from './pages/Contacto'
 import { Footer } from './Components/Footer'
+import { Login } from './pages/Login'
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
     <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/Contacto' element={<Contacto/>}/>
+    <Route path='/login' element={<Login/>}/>
     </Routes>
     </main>
     <Footer/>

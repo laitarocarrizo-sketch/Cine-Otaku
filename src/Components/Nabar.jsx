@@ -8,7 +8,7 @@ export const Nabar = () => {
         <div className="flex gap-2">
           <NavLink to={"/"}className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Inicio</NavLink>
           <NavLink to={"Contacto"} href="" className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Contacto</NavLink>
-          <a href="" className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Iniciar Secion</a>
+          <NavLink to={"Login"} className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Iniciar Secion</NavLink>
           <a href="" className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Registrarse</a>
         </div>
         </nav>
