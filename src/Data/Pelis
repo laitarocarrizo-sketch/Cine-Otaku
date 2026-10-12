@@ -1,0 +1,38 @@
+export const peliculas = [
+  {
+    id: "1",
+    titulo: "El viaje de Chihiro",
+    anio: 2001,
+    genero: "Animación · Fantasía",
+    duracion: "2 h 5 min",
+    calificacion: "8.6",
+    imagen:
+      "https://i.pinimg.com/736x/93/6b/c2/936bc2c8a46385dddd69ecaa1fe1d2d5.jpg",
+    descripcion:
+      "Chihiro, una niña de diez años, llega por accidente a un mundo mágico gobernado por dioses y criaturas extraordinarias. Para salvar a sus padres y volver a casa, deberá encontrar valor y descubrir quién es.",
+  },
+  {
+    id: "2",
+    titulo: "La princesa Mononoke",
+    anio: 1997,
+    genero: "Animación · Fantasía · Aventura",
+    duracion: "2 h 13 min",
+    calificacion: "8.3",
+    imagen:
+      "https://i.pinimg.com/736x/62/1f/a3/621fa391eb10f4196393f684ccb5175d.jpg",
+    descripcion:
+      "Ashitaka emprende un viaje para encontrar una cura para una maldición y queda atrapado en el conflicto entre los habitantes de una ciudad minera y los espíritus del bosque que luchan por proteger su hogar.",
+  },
+  {
+    id: "3",
+    titulo: "Akira",
+    anio: 1988,
+    genero: "Animación · Ciencia ficción · Acción",
+    duracion: "2 h 4 min",
+    calificacion: "8.0",
+    imagen:
+      "https://i.pinimg.com/1200x/a4/3e/77/a43e77eb02a73c9eae40c1a4e83aad71.jpg",
+    descripcion:
+      "En una Neo-Tokio futurista, Kaneda intenta ayudar a su amigo Tetsuo después de que un accidente lo involucra en un proyecto secreto que amenaza con desatar un poder extraordinario.",
+  },
+];
