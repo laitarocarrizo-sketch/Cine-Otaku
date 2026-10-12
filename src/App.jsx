@@ -4,6 +4,7 @@ import { Home } from './pages/Home'
 import { Contacto } from './pages/Contacto'
 import { Footer } from './Components/Footer'
 import { Login } from './pages/Login'
+import { Registro } from './pages/Registro'
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
     <Route path='/' element={<Home/>}/>
     <Route path='/Contacto' element={<Contacto/>}/>
     <Route path='/login' element={<Login/>}/>
+    <Route path='/Register' element={<Registro/>}/>
     </Routes>
     </main>
     <Footer/>

@@ -9,7 +9,7 @@ export const Nabar = () => {
           <NavLink to={"/"}className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Inicio</NavLink>
           <NavLink to={"Contacto"} href="" className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Contacto</NavLink>
           <NavLink to={"Login"} className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Iniciar Secion</NavLink>
-          <a href="" className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Registrarse</a>
+          <NavLink to={"Register"} href="" className="text-3xl font-bold bg-indigo-700 hover:bg-indigo-600 rounded-xl px-4 py-1">Registrarse</NavLink>
         </div>
         </nav>
     </header>
