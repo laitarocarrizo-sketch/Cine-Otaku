@@ -8,12 +8,16 @@ function App() {
 
   return (
     <>
+    <section className="min-h-screen flex flex-col">
     <Nabar/>
+    <main className="grow">
     <Routes>
     <Route path='/' element={<Home/>}/>
     <Route path='/Contacto' element={<Contacto/>}/>
     </Routes>
+    </main>
     <Footer/>
+    </section>
     </>
   )
 }
