@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router";
+import { Route, Routes, Navigate } from "react-router";
 import { Nabar } from "./Components/Nabar";
 import { Home } from "./pages/Home";
 import { Contacto } from "./pages/Contacto";
@@ -10,8 +10,20 @@ import { Error404 } from "./pages/Error404";
 import { Dashboard } from "./Components/Dashboard";
 import { Admin } from "./pages/Admin";
 import { AdminUsuarios } from "./pages/AdminUsuarios";
+import { useState } from "react";
+import { ProtectedRoutes } from "./routes/ProtectedRoutes";
 
 function App() {
+  const [user, setuser] = useState({
+    name: "Lautaro",
+    role: "admin",
+  });
+  console.log(user);
+
+  const isAllowed = user.role === "admin";
+
+  console.log(!!isAllowed);
+
   return (
     <>
       <section className="min-h-screen flex flex-col">
@@ -23,11 +35,18 @@ function App() {
             <Route path="/Contacto" element={<Contacto />} />
             <Route path="/login" element={<Login />} />
             <Route path="/Register" element={<Registro />} />
-            <Route path="/admin" element={<Dashboard />}>
-              <Route index element={<Admin />} />
-              <Route path="usuarios" element={<AdminUsuarios/>} />
+
+            <Route
+              path="/admin"
+              element={<ProtectedRoutes user={user} isAllowed={isAllowed} />}
+            >
+              <Route element={<Dashboard />}>
+                <Route index element={<Admin />} />
+                <Route path="usuarios" element={<AdminUsuarios />} />
+              </Route>
             </Route>
-            <Route path="/*" element={<Error404 />} />
+
+            <Route path="*" element={<Error404 />} />
           </Routes>
         </main>
         <Footer />
