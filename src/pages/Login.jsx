@@ -1,4 +1,19 @@
+import { useForm } from "react-hook-form";
+
 export const Login = () => {
+  const {
+    register,
+    formState: { errors },
+    handleSubmit,
+    reset,
+  } = useForm();
+
+
+  const onSubmit = (data) =>{
+    console.log(data);
+  }
+
+
   return (
     <section className="container mx-auto max-w-96 md:max-w-2xl lg:max-w-4xl px-4 py-8 md:py-12">
       <div className="grid overflow-hidden rounded-xl bg-slate-300 shadow-md md:grid-cols-2">
@@ -38,7 +53,7 @@ export const Login = () => {
             </p>
           </div>
 
-          <form className="space-y-5">
+          <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
             <div>
               <label
                 htmlFor="email"
@@ -52,8 +67,19 @@ export const Login = () => {
                 type="email"
                 name="email"
                 id="email"
-                required
+                {...register("email", {
+                  required: "el email es requerido",
+                  minLength: {
+                    value: 3,
+                    message: "El email tiene que tener al menos 3 caracteres",
+                  },
+                  pattern: {
+                    value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                    message: "Ingresa un email válido",
+                  },
+                })}
               />
+              <p className="text-red-600">{errors?.email?.message}</p>
             </div>
 
             <div>
@@ -77,8 +103,18 @@ export const Login = () => {
                 type="password"
                 name="password"
                 id="password"
-                required
+                {...register("password", {
+                  required: "La contraseña es requerida",
+                  minLength: {
+                    value: 3,
+                    message: "La contraseña debe tener alemenos 3 caracteres",
+                  },
+                })}
               />
+
+                <p className="text-red-600">{errors?.password?.message}</p>
+
+
             </div>
 
             <button

@@ -26,7 +26,7 @@ function App() {
 
   return (
     <>
-      <section className="min-h-screen flex flex-col">
+      <section className="min-h-screen flex flex-col dark:bg-blue-950">
         <Nabar />
         <main className="grow">
           <Routes>

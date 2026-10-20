@@ -72,8 +72,8 @@ export const AdminUsuarios = () => {
   return (
     <section>
       <div className="mb-6">
-        <h2 className="text-2xl font-bold text-white">Usuarios</h2>
-        <p className="mt-2 text-slate-300">
+        <h2 className="text-2xl font-bold dark:text-white">Usuarios</h2>
+        <p className="mt-2 dark:text-slate-300">
           Consulta los usuarios y el estado de sus cuentas.
         </p>
       </div>
