@@ -11,7 +11,7 @@ export const Admin = () => {
         <>
           <div className="mb-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <div>
-              <h2 className="text-2xl font-bold text-white">
+              <h2 className="text-2xl font-bold  dark:text-white">
                 Agregar película
               </h2>
               <p className="mt-2 text-slate-300">
@@ -32,10 +32,10 @@ export const Admin = () => {
         <>
           <div className="mb-6 flex flex-col justify-between gap-4 sm:flex-row sm:items-end">
             <div>
-              <h2 className="text-2xl font-bold text-white">
+              <h2 className="text-2xl font-bold dark:text-white">
                 Películas cargadas
               </h2>
-              <p className="mt-2 text-slate-300">
+              <p className="mt-2 dark:text-slate-300">
                 Gestiona la colección de películas.
               </p>
             </div>

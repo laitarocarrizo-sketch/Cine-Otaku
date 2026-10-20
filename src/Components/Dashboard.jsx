@@ -7,9 +7,9 @@ const vistas = [
 
 export const Dashboard = () => {
   return (
-    <div className="mx-auto flex w-full max-w-7xl flex-col md:flex-row">
-      <aside className="bg-slate-900 p-4 text-white md:min-h-screen md:w-64 md:shrink-0 md:p-6">
-        <p className="hidden font-mono text-xs uppercase tracking-widest text-cyan-300 md:block">
+    <div className="mx-auto flex w-full max-w-7xl flex-col md:flex-row dark:bg-blue-950 ">
+      <aside className="bg-slate-900 p-4 dark:text-white md:min-h-screen md:w-64 md:shrink-0 md:p-6">
+        <p className="hidden font-mono text-xs uppercase tracking-widest text-white dark:text-cyan-300 md:block">
           Administración
         </p>
         <nav
@@ -37,10 +37,10 @@ export const Dashboard = () => {
 
       <main className="min-w-0 flex-1 p-4 md:p-8">
         <header className="mb-8">
-          <p className="font-mono text-sm uppercase tracking-widest text-cyan-500">
+          <p className="font-mono text-sm uppercase tracking-widest dark:text-cyan-500">
             Panel de administración
           </p>
-          <h1 className="mt-2 text-3xl font-bold text-white">
+          <h1 className="mt-2 text-3xl font-bold dark:text-white">
             Dashboard
           </h1>
         </header>

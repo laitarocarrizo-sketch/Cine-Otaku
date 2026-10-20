@@ -2,7 +2,7 @@ import { Card } from "../Components/Card";
 import { peliculas } from "../Data/pelis";
 export const Home = () => {
   return (
-    <div className="pb-8">
+    <div className="pb-8 dark:bg-blue-950">
       <section className="relative mx-auto min-h-72  overflow-hidden bg-slate-900 md:min-h-96">
         <img
           src="https://i.pinimg.com/736x/61/67/79/616779ccd881b9605d2bcafbd02a7c72.jpg"
@@ -24,13 +24,13 @@ export const Home = () => {
       </section>
       <section className="mx-auto max-w-6xl px-4 pt-10 md:px-8">
         <div className="mb-6">
-          <p className="font-mono text-sm uppercase tracking-widest text-black-500">
+          <p className="font-mono text-sm uppercase tracking-widest text-black-500 dark:text-blue-50">
             selecion de la semana
           </p>
-          <h2 className="mt-2 text-3xl font-bold text-black">
+          <h2 className="mt-2 text-3xl font-bold text-black dark:text-blue-50">
             Peliculas destacadas
           </h2>
-          <p className="mt-2 text-lg text-black-800">
+          <p className="mt-2 text-lg text-black-800 dark:text-blue-50">
             Peliculas para un dia especial
           </p>
         </div>
